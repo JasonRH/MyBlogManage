@@ -22,7 +22,7 @@ menu:
   icon:
 
 ## favicon
-favicon: /favicon.ico
+favicon: /img/avatar.jpg
 
 ## Feed
 rss: /atom.xml
@@ -198,8 +198,8 @@ changyan:
 ## Valine评论
 valine:
    enable: true
-   appId: xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz
-   appKey: erIpQac4azoCmgfBB7Dl9maa
+   appId: tpqT2XsfMpVPjR2x4Ou2Hfgk-gzGzoHsz
+   appKey: zVoewkC4BTgyKYFCxAG8V2tO
    placeholder: 说点什么吧
    notify: false
    verify: false
