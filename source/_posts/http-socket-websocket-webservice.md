@@ -33,7 +33,7 @@ tags: [协议, 通讯]
 
 #### HTTP 协议
 
-超文本传输协议，对应于应用层，用于如何封装数据。  **http 为短连接：**客户端发送请求都需要服务器端回送响应.请求结束后，主动释放链接，因此为短连接。
+超文本传输协议，对应于应用层，用于如何封装数据。  **HTTP为短连接：**客户端发送请求都需要服务器端回送响应.请求结束后，主动释放链接，因此为短连接。
 
 #### 补充
 
@@ -47,13 +47,11 @@ tags: [协议, 通讯]
 
 ### 什么是Socket？
 
-socket是对TCP/IP协议的封装，Socket本身并不是协议，而是一个调用接口（API），通过Socket，我们才能使用TCP/IP协议。实际上，Socket跟TCP/IP协议没有必然的联系。Socket编程接口在设计的时候，就希望也能适应其他的网络协议。所以说，Socket的出现只是使得程序员更方便地使用TCP/IP协议栈而已，是对TCP/IP协议的抽象，从而形成了我们知道的一些最基本的函数接口，比如create、listen、connect、accept、send、read和write等等。网络有一段关于socket和TCP/IP协议关系的说法比较容易理解：“TCP/IP只是一个协议栈，就像操作系统的运行机制一样，必须要具体实现，同时还要提供对外的操作接口。这个就像操作系统会提供标准的编程接口，比如win32编程接口一样，TCP/IP也要提供可供程序员做网络开发所用的接口，这就是Socket编程接口。”
+Socket是对TCP/IP协议的封装，Socket本身并不是协议，而是一个调用接口（API），通过Socket，我们才能使用TCP/IP协议。实际上，Socket跟TCP/IP协议没有必然的联系。Socket编程接口在设计的时候，就希望也能适应其他的网络协议。所以说，Socket的出现只是使得程序员更方便地使用TCP/IP协议栈而已，是对TCP/IP协议的抽象，从而形成了我们知道的一些最基本的函数接口，比如create、listen、connect、accept、send、read和write等等。网络有一段关于socket和TCP/IP协议关系的说法比较容易理解：“TCP/IP只是一个协议栈，就像操作系统的运行机制一样，必须要具体实现，同时还要提供对外的操作接口。这个就像操作系统会提供标准的编程接口，比如win32编程接口一样，TCP/IP也要提供可供程序员做网络开发所用的接口，这就是Socket编程接口。”
 
 CSDN上有个比较形象的描述：HTTP是轿车，提供了封装或者显示数据的具体形式；Socket是发动机，提供了网络通信的能力。
 
-**Socket为长连接：**通常情况下Socket 连接就是 TCP 连接，因此 Socket 连接一旦建立,通讯双方开始互发数据内容，直到双方断开连接。在实际应用中，由于网络节点过多，在传输过程中，会被节点断开连接，因此要通过轮询高速网络，该节点处于活跃状态。
-
-很多情况下，都是需要服务器端向客户端主动推送数据，保持客户端与服务端的实时同步。
+**Socket连接为长连接：**通常情况下Socket 连接就是 TCP 连接（Socket当然也可以进行UDP无连接通讯），因此 Socket 连接一旦建立,通讯双方开始互发数据内容，直到双方断开连接。在实际应用中，由于网络节点过多，在传输过程中，会被节点断开连接，因此要通过轮询高速网络，保证该节点处于活跃状态。
 
 若双方是 Socket 连接，可以由服务器直接向客户端发送数据。
 
@@ -69,7 +67,7 @@ WebSocket是HTML5规范提出的一种在单个TCP连接上进行全双工通信
 
 在WebSocket中，只需要服务器和浏览器通过HTTP协议进行一个握手的动作，然后单独建立一条TCP的通信通道进行全双工通信。但是建立之后，在真正传输时候是不需要HTTP协议的。
 
-![图片来源:https://blog.csdn.net/SL_ideas/article/details/73648378](https://img-blog.csdn.net/20170626140009906?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvU0xfaWRlYXM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "图片来源:https://blog.csdn.net/SL_ideas/article/details/73648378")
+![图片来源:https://blog.csdn.net/SL_ideas/article/details/73648378](https://img-blog.csdn.net/20170626140009906?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvU0xfaWRlYXM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 ---
 
