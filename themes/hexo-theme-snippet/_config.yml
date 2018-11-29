@@ -158,8 +158,8 @@ declaration:
 
 ## 文章打赏
 reward:
-  alipay: '/img/reward-wepay.jpg'
-  wepay: '/img/reward-wepay.jpg'
+  alipay: '/img/ali.jpg'
+  wepay: ''
   tip: 赞赏是不耍流氓的鼓励
 
 ## 主题评论

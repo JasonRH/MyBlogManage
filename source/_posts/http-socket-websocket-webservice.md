@@ -1,5 +1,5 @@
 ---
-title: Http、Socket、WebSocket、WebService
+title: HTTP、Socket、WebSocket、WebService
 date: 2018-11-28 15:49:28
 categories: 前端
 tags: [协议, 通讯]
@@ -67,7 +67,9 @@ WebSocket是HTML5规范提出的一种在单个TCP连接上进行全双工通信
 
 在WebSocket中，只需要服务器和浏览器通过HTTP协议进行一个握手的动作，然后单独建立一条TCP的通信通道进行全双工通信。但是建立之后，在真正传输时候是不需要HTTP协议的。
 
-![图片来源:https://blog.csdn.net/SL_ideas/article/details/73648378](https://img-blog.csdn.net/20170626140009906?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvU0xfaWRlYXM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![](https://img-blog.csdn.net/20170626140009906)
+
+图片来源: https://img-blog.csdn.net/20170626140009906 ，若图片无法加载请查看原图
 
 ---
 
