@@ -2,16 +2,14 @@
 title: 定时任务和倒计时
 date: 2018-11-27 13:24:44
 categories: 前端
-tags: [java, android]
+tags: [Java, Android]
 ---
-
-
 
 ### Java 基本的定时任务
 
  总结方法有三种：
 
-1.  创建一个thread，然后让它在while循环里一直运行着，通过sleep方法来达到定时任务的效果；
+1. 创建一个thread，然后让它在while循环里一直运行着，通过sleep方法来达到定时任务的效果；
 
 ```java
 package com.rh.demo;
@@ -38,7 +36,7 @@ public class JavaTimerTest1 {
 }
 ```
 
-2.  用Timer和TimerTask
+2. 用Timer和TimerTask
 
    与第一种方法相比有如下好处：
 
@@ -53,20 +51,19 @@ public class JavaTimerTest1 {
    
    public class JavaTimerTest2 {
    
-       public static void main(String[] args) {
-           TimerTask timerTask = new TimerTask() {
-               @Override
-               public void run() {
-                   System.out.println("Hello");
-               }
-           };
-           Timer timer = new Timer();
-           long delay = 0;
-           long intevalPeriod = 1 * 1000;
-           timer.scheduleAtFixedRate(timerTask,delay,intevalPeriod);
-       }
+      public static void main(String[] args) {
+          TimerTask timerTask = new TimerTask() {
+              @Override
+              public void run() {
+                  System.out.println("Hello");
+              }
+          };
+          Timer timer = new Timer();
+          long delay = 0;
+          long intevalPeriod = 1 * 1000;
+          timer.scheduleAtFixedRate(timerTask,delay,intevalPeriod);
+      }
    }
-   
    ```
 
 3. 用**ScheduledExecutorService**
@@ -104,69 +101,79 @@ public class JavaTimerTest3 {
 
 1. schedule(commod,delay,unit) ，这个方法是说系统启动后，需要等待多久执行，delay是等待时间。只执行一次，没有周期性。  
 
-    
 2. scheduledThreadPool.scheduleAtFixedRate(new TaskTest("执行调度任务3"),0, 1, TimeUnit.SECONDS);   
 
    //这个就是每隔1秒，开启一个新线程，不管上一次是否执行完 
 
-   
-3.  scheduledThreadPool.scheduleWithFixedDelay(new TaskTest("第四个"),0, 3, TimeUnit.SECONDS); 
+3. scheduledThreadPool.scheduleWithFixedDelay(new TaskTest("第四个"),0, 3, TimeUnit.SECONDS); 
 
    //这个就是上一个任务执行完，3秒后开启一个新线程
-
-
 
 ---
 
 ### Android中独有的定时任务
 
-
-
 1. Handler
 
    ```java
-   /** 
-     * handler定时器使用postDelyed实现 
-     *  
-     * @author Smalt 
-     *  
-     */  
-       public class HanderDemoActivity extends Activity {  
-       TextView tvShow;  
-       private int i = 0;  
-       private int TIME = 1000;  
-     
-       @Override  
-       public void onCreate(Bundle savedInstanceState) {  
-           super.onCreate(savedInstanceState);  
-           setContentView(R.layout.main);  
-           tvShow = (TextView) findViewById(R.id.tv_show);  
-           handler.postDelayed(runnable, TIME); //每隔1s执行  
-   //handler.removeCallbacks(runnable);  //关闭计时器
-       }  
-     
-       Handler handler = new Handler();  
-       Runnable runnable = new Runnable() {  
-     
-           @Override  
-           public void run() {  
-               // handler自带方法实现定时器  
-               try {  
-                   handler.postDelayed(this, TIME);  
-                   tvShow.setText(Integer.toString(i++));  
-                   System.out.println("do...");  
-               } catch (Exception e) {  
-                   // TODO Auto-generated catch block  
-                   e.printStackTrace();  
-                   System.out.println("exception...");  
-               }  
-           }  
-       };  
-     
-      }  
 
-   
-   ```
+   /** 
+
+   * handler定时器使用postDelyed实现 
+   * 
+   * @author Smalt 
+   * */  
+
+     public class HanderDemoActivity extends Activity {  
+
+     TextView tvShow;  
+
+     private int i = 0;  
+
+     private int TIME = 1000;  
+
+     @Override  
+
+     public void onCreate(Bundle savedInstanceState) {  
+
+        super.onCreate(savedInstanceState);  
+
+        setContentView(R.layout.main);  
+
+        tvShow = (TextView) findViewById(R.id.tv_show);  
+
+        handler.postDelayed(runnable, TIME); //每隔1s执行  
+
+     //handler.removeCallbacks(runnable);  //关闭计时器
+
+     }  
+
+     Handler handler = new Handler();  
+
+     Runnable runnable = new Runnable() {  
+
+        @Override  
+
+        public void run() {  
+
+            // handler自带方法实现定时器  
+            try {  
+                handler.postDelayed(this, TIME);  
+                tvShow.setText(Integer.toString(i++));  
+                System.out.println("do...");  
+            } catch (Exception e) {  
+                // TODO Auto-generated catch block  
+                e.printStackTrace();  
+                System.out.println("exception...");  
+            }  
+
+        }  
+
+     };  
+
+     }  
+
+```
 
 2. AlarmManager
 
@@ -201,84 +208,81 @@ public class HorizonService extends Service {
 
 ### 倒计时
 
-
-
-1.  **简易方式实现**
+1. **简易方式实现**
 
 ```java
 import java.util.*;  
 
 import java.util.concurrent.*;  
 
-	  
+
 
 public class CountDown {  
 
-	   private int limitSec;  
+       private int limitSec;  
 
-	   public CountDown(int limitSec) throws InterruptedException{  
+       public CountDown(int limitSec) throws InterruptedException{  
 
-	       this.limitSec = limitSec;  
+           this.limitSec = limitSec;  
 
-	       System.out.println("Count from "+limitSec);  
+           System.out.println("Count from "+limitSec);  
 
-	       while(limitSec > 0){  
+           while(limitSec > 0){  
 
-	           System.out.println("remians "+ --limitSec +" s");  
+               System.out.println("remians "+ --limitSec +" s");  
 
-	           TimeUnit.SECONDS.sleep(1);  
+               TimeUnit.SECONDS.sleep(1);  
 
-	       }  
+           }  
 
-	       System.out.println("Time is out");  
+           System.out.println("Time is out");  
 
-	}  
-}  
-
+    }  
+}
 ```
 
 1. **使用ScheduleExecutor实现**
 
    ```java
-   import java.util.concurrent.*;  
 
-   	  
+   import java.util.concurrent.*;  
 
    public class CountDown1 {  
 
-   	   private int curSec;   //记录倒计时当下时间  
-   	   public CountDown1(int limitSec) throws InterruptedException{  
+          private int curSec;   //记录倒计时当下时间  
+          public CountDown1(int limitSec) throws InterruptedException{  
+       
+              this.curSec = limitSec;  
+              System.out.println("count down form "+limitSec);  
+       
+              //手动创建线程池，效果会更好哦，不推荐使用以下创建线程池方法   
+       
+              ScheduledExecutorService exec = Executors.newScheduledThreadPool(1);  
+       
+              exec.scheduleAtFixedRate(new Task(),0,1,TimeUnit.SECONDS);  
+       
+              TimeUnit.SECONDS.sleep(limitSec);//sleeping for limitSec seconds 
+       
+              exec.shutdownNow();  
+       
+              System.out.println("Time out！");  
+       
+          }  
+       
+          private class Task implements Runnable{
+             @Override  
+       
+              public void run(){  
+       
+                  System.out.println("Time remains "+ --curSec +" s");  
+       
+              }  
+       
+          }  
 
-   	       this.curSec = limitSec;  
-   	       System.out.println("count down form "+limitSec);  
-
-   	       //手动创建线程池，效果会更好哦，不推荐使用以下创建线程池方法   
-
-   	       ScheduledExecutorService exec = Executors.newScheduledThreadPool(1);  
-
-   	       exec.scheduleAtFixedRate(new Task(),0,1,TimeUnit.SECONDS);  
-
-   	       TimeUnit.SECONDS.sleep(limitSec);//sleeping for limitSec seconds 
-
-   	       exec.shutdownNow();  
-
-   	       System.out.println("Time out！");  
-
-   	   }  
-
-   	   private class Task implements Runnable{
-   	      @Override  
-
-   	       public void run(){  
-
-   	           System.out.println("Time remains "+ --curSec +" s");  
-
-   	       }  
-
-   	   }  
 }  
 
-   ```
+```
 2.  **使用java.util.Timer实现**
 
    ```java
@@ -286,39 +290,39 @@ public class CountDown {
 
    import java.util.concurrent.TimeUnit;  
 
-   	  
+
 
    public class CountDown2 {  
 
-   	   private int curSec;  
-   	   public CountDown2(int limitSec) throws InterruptedException{  
+          private int curSec;  
+          public CountDown2(int limitSec) throws InterruptedException{  
 
-   	       this.curSec = limitSec;  
-   	       System.out.println("count down from "+limitSec+" s ");  
+              this.curSec = limitSec;  
+              System.out.println("count down from "+limitSec+" s ");  
 
-   	       Timer timer = new Timer();  
+              Timer timer = new Timer();  
 
-   	       timer.schedule(new TimerTask(){  
+              timer.schedule(new TimerTask(){  
 
-   	           public void run(){  
+                  public void run(){  
 
-   	               System.out.println("Time remians "+ --curSec +" s");  
+                      System.out.println("Time remians "+ --curSec +" s");  
 
-   	           }  
+                  }  
 
-   	       },0,1000);  
+              },0,1000);  
 
-   	       TimeUnit.SECONDS.sleep(limitSec);//sleeping for limitSec seconds  
+              TimeUnit.SECONDS.sleep(limitSec);//sleeping for limitSec seconds  
 
               timer.cancel();  
 
-   	       System.out.println("Time is out!");  
+              System.out.println("Time is out!");  
 
-   	   }    
+          }    
 
-   }  
+   }
+```
 
-   ```
 3. Android特有
 
    ```java
@@ -333,11 +337,3 @@ public class CountDown {
        }
    }.start();
    ```
-
-
-
-
-
-
-
-

@@ -2,7 +2,7 @@
 title: 线程池
 date: 2018-11-28 13:20:25
 categories: 前端
-tags: [java, 线程池]
+tags: [Java, 线程池]
 ---
 
 ##### 说明

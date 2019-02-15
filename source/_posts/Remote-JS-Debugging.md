@@ -11,7 +11,7 @@ tags: [react-native]
 
 #### 解决方法
 
-1. 在模拟器上`Cmd + M` 进入开发者菜单
+1. 在模拟器上`Ctrl + M` 进入开发者菜单
 
 2. Dev settings > Debug server host & port for device
 
