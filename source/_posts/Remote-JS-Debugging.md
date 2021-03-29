@@ -1,8 +1,10 @@
 ---
 title: android模拟器与chrome进行Remote JS Debugging连接不上
-date: 2019-01-24 14:59:09
 categories: 前端
-tags: [react-native]
+tags:
+  - react-native
+abbrlink: 10935
+date: 2019-01-24 14:59:09
 ---
 
 #### 现象

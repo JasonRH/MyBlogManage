@@ -1,8 +1,11 @@
 ---
 title: 定时任务和倒计时
-date: 2018-11-27 13:24:44
 categories: 前端
-tags: [Java, Android]
+tags:
+  - Java
+  - Android
+abbrlink: 37939
+date: 2018-11-27 13:24:44
 ---
 
 ### Java 基本的定时任务

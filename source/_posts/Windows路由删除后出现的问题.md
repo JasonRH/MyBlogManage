@@ -1,9 +1,14 @@
 ---
-title: ERROR: Protocol family unavailable和connect: network is unreachable
-date: 2019-04-24 11:08:30
+title: 'Windows路由删除后出现的问题'
 categories: 其它
-tags: [Android Studio, Windows]
+tags:
+  - Android
+abbrlink: 44730
+date: 2019-04-24 11:08:30
 ---
+
+错误:Protocol family unavailable和connect:network is unreachable
+
 原由：在Windows中 进行路由重置操作 route -f
 
 现象：

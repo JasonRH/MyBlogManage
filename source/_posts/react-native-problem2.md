@@ -1,8 +1,10 @@
 ---
 title: The component for route must be a react component
-date: 2019-02-16 11:11:24
 categories: 前端
-tags: [react-native]
+tags:
+  - react-native
+abbrlink: 61012
+date: 2019-02-16 11:11:24
 ---
 
 #### 问题描述：

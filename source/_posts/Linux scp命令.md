@@ -1,7 +1,9 @@
 ---
 title: Linux scp命令
+tags:
+  - 指令
+abbrlink: 64196
 date: 2019-05-22 13:00:00
-tags: [指令]
 ---
 
 ## Linux scp命令

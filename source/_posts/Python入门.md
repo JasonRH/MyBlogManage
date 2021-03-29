@@ -1,8 +1,11 @@
 ---
 title: Python入门
-date: 2018-12-11 19:54:53
 categories: 后端
-tags: [Python, 深度学习]
+tags:
+  - Python
+  - 深度学习
+abbrlink: 21062
+date: 2018-12-11 19:54:53
 ---
 
 # Python是什么

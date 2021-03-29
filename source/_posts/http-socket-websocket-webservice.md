@@ -1,8 +1,11 @@
 ---
 title: HTTP、Socket、WebSocket、WebService
-date: 2018-11-28 15:49:28
 categories: 前端
-tags: [协议, 通讯]
+tags:
+  - 协议
+  - 通讯
+abbrlink: 41721
+date: 2018-11-28 15:49:28
 ---
 
 ### 网络分层

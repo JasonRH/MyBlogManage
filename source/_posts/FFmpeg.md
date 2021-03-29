@@ -1,7 +1,9 @@
 ---
 title: FFmpeg视频工具
+tags:
+  - 视频
+abbrlink: 40339
 date: 2019-06-10 13:00:00
-tags: [视频]
 ---
 
 FFmpeg是非常强大的多媒体视频处理工具。

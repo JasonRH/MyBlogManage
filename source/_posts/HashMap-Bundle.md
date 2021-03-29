@@ -1,8 +1,11 @@
 ---
 title: HashMap和Bundle
-date: 2018-12-01 15:03:44
 categories: 前端
-tags: [HashMap, Bundle]
+tags:
+  - HashMap
+  - Bundle
+abbrlink: 25454
+date: 2018-12-01 15:03:44
 ---
 
 ## HashMap(JAVA)

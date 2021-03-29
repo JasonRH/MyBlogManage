@@ -1,8 +1,10 @@
 ---
 title: Java数据转换
-date: 2019-04-08 13:30:35
 categories: Java
-tags: [数据转换]
+tags:
+  - 数据转换
+abbrlink: 60856
+date: 2019-04-08 13:30:35
 ---
 
 ### **基本Java类型转换**

@@ -1,7 +1,9 @@
 ---
 title: Git
+tags:
+  - git
+abbrlink: 25246
 date: 2019-05-13 16:00:00
-tags: [git]
 ---
 
 打 tag 

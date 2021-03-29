@@ -1,9 +1,11 @@
 ---
 layout: post
 title: 使用Jekyll + GitHub Pages搭建个人博客
-date: 2018-11-22
 categories: 其它
-tags: [Jekyll]
+tags:
+  - Jekyll
+abbrlink: 8638
+date: 2018-11-22 00:00:00
 ---
 
 ### 前言

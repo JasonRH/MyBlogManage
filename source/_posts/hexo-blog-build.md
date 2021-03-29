@@ -1,8 +1,10 @@
 ---
 title: 使用hexo搭建个人博客
-date: 2018-11-23 14:35:25
 categories: 其它
-tags: [hexo]
+tags:
+  - hexo
+abbrlink: 43303
+date: 2018-11-23 14:35:25
 ---
 
 ### 一、安装Node.js和配置好环境

@@ -1,8 +1,10 @@
 ---
 title: InputStream数据读取
-date: 2019-02-14 11:13:53
 categories: 其它
-tags: [Java]
+tags:
+  - Java
+abbrlink: 41378
+date: 2019-02-14 11:13:53
 ---
 
 ```java
