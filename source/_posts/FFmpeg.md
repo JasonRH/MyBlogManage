@@ -1,5 +1,6 @@
 ---
 title: FFmpeg视频工具
+categories: 其它
 tags:
   - 视频
 abbrlink: 40339

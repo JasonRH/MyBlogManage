@@ -1,6 +1,6 @@
 ---
 title: Replugin插件化
-categories: 前端
+categories: 移动端
 tags:
   - Android
 abbrlink: 35111

@@ -1,6 +1,6 @@
 ---
 title: 'Android生成aar包时,引用的其它aar无法打包问题'
-categories: 前端
+categories: 移动端
 tags:
   - Android
 abbrlink: 27803

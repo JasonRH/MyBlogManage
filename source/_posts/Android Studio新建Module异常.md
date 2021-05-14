@@ -1,6 +1,6 @@
 ---
 title: Android Studio新建Module异常
-categories: 前端
+categories: 移动端
 tags:
   - Android Studio
 abbrlink: 46280

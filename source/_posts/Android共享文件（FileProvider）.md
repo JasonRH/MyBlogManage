@@ -1,6 +1,6 @@
 ---
 title: Android共享文件（FileProvider）
-categories: 前端
+categories: 移动端
 tags:
   - Android
 abbrlink: 34226

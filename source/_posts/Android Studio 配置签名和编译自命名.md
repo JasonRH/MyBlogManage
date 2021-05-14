@@ -1,6 +1,6 @@
 ---
 title: Android Studio 配置签名和编译自命名
-categories: 前端
+categories: 移动端
 tags:
   - Android
 abbrlink: 59951

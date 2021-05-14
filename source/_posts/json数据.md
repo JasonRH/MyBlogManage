@@ -1,5 +1,6 @@
 ---
 title: json数据
+categories: 移动端
 tags:
   - json
 abbrlink: 49826

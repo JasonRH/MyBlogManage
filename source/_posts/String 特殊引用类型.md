@@ -1,6 +1,6 @@
 ---
 title: String特殊引用类型
-categories: 前端
+categories: 移动端
 tags:
   - Java
 abbrlink: 5952

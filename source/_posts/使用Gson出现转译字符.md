@@ -1,5 +1,6 @@
 ---
 title: 使用Gson出现转译字符
+categories: 移动端
 tags:
   - json
 abbrlink: 22247

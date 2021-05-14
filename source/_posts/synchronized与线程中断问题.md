@@ -1,8 +1,8 @@
 ---
 title: synchronized与线程中断问题
-categories: 其它
+categories: 后端
 tags:
-  - Android
+  - Java
 abbrlink: 16996
 date: 2021-03-25 11:30:00
 ---

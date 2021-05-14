@@ -8,6 +8,9 @@ menu:
 - page: home
   url: /
   icon:
+- page: 移动端
+  url: /categories/移动端/
+  icon:
 - page: 前端
   url: /categories/前端/
   icon:

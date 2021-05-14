@@ -1,6 +1,6 @@
 ---
 title: HashMap和Bundle
-categories: 前端
+categories: 移动端
 tags:
   - HashMap
   - Bundle

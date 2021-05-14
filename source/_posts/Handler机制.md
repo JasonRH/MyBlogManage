@@ -1,6 +1,6 @@
 ---
 title: Handler机制
-categories: 前端
+categories: 移动端
 tags:
   - Android
 abbrlink: 6248

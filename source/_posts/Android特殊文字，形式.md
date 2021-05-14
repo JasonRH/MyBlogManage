@@ -1,6 +1,6 @@
 ---
 title: Android特殊文字，形式
-categories: 前端
+categories: 移动端
 tags:
   - Android
 abbrlink: 46659

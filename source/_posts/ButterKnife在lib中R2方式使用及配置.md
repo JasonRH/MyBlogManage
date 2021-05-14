@@ -1,6 +1,6 @@
 ---
 title: ButterKnife在lib中R2方式使用及配置
-categories: 前端
+categories: 移动端
 tags:
   - Android
 abbrlink: 55063

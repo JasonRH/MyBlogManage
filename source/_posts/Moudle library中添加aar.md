@@ -1,6 +1,6 @@
 ---
 title: Moudle library中添加aar
-categories: 前端
+categories: 移动端
 tags:
   - Android
 abbrlink: 21449

@@ -1,6 +1,6 @@
 ---
 title: Retrofit + okhttp 下载问题
-categories: 前端
+categories: 移动端
 tags:
   - Android
 abbrlink: 39047

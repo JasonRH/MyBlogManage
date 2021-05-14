@@ -1,6 +1,6 @@
 ---
 title: okhttp 连续两次请求踩坑
-categories: 前端
+categories: 移动端
 tags:
   - Android
 abbrlink: 11605

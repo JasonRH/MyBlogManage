@@ -1,6 +1,6 @@
 ---
 title: NFC触碰连接蓝牙
-categories: 前端
+categories: 移动端
 tags:
   - Android
 abbrlink: 9503
